@@ -28,7 +28,7 @@ app.set("view engine", "hbs");
 hbs.registerPartials(__dirname + "/views/partials");
 
 //логирование, перехват всех запросов
-app.use(function(request, response, next){
+/*app.use(function(request, response, next){
      
     let now = new Date();
     let hour = now.getHours();
@@ -37,7 +37,7 @@ app.use(function(request, response, next){
     let data = `${hour}:${minutes}:${seconds} ${request.method} ${request.url} ${request.get("user-agent")}`;
     fs.appendFile("server.log", data + "\n", function(){});
     next();
-});
+});*/
 
 app.post("/feedback", jsonParser, formController.index);
 
@@ -53,4 +53,6 @@ app.use(function (request, response) {
 
 
 // начинаем прослушивать подключения на 3000 порту
-app.listen(3000);
+app.listen(3000, "127.0.0.1", () => {
+    console.log(`Server running at port 3000`);
+});
