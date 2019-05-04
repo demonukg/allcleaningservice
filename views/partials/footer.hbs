@@ -1,0 +1,265 @@
+<div id="rec101689249" class="r t-rec" style=" " data-record-type="215" >
+    <a name="form" style="font-size:0;"></a>
+</div>
+
+<div id="rec102445032" class="r t-rec t-rec_pt_60 t-rec_pb_30" style="padding-top:60px;padding-bottom:30px;background-color:#fff352; " data-record-type="128" data-bg-color="#fff352">
+    <!-- T120 -->
+    <div class="t120"> 
+        <div class="t-container t-align_left"> 
+            <div class="t-col t-col_8 "> 
+                <div class="t120__title t-heading t-heading_sm" field="title" style="">
+                    СДЕЛАЙТЕ ЗАКАЗ
+                </div> 
+                <div class="t120__descr t-descr t-descr_xs" field="subtitle" style="">
+                    Отправьте контакты и информацию о своем заказе. Мы свяжемся с Вами для подтверждения и уточнения деталей заказа.
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+
+<div id="rec102445033" class="r t-rec t-rec_pt_0 t-rec_pb_105" style="padding-top:0px;padding-bottom:105px;background-color:#fff352; " data-animationappear="off" data-record-type="678" data-bg-color="#fff352">
+    <!-- t678 -->
+    <div class="t678 "> 
+        <div class="t-container"> 
+            <div class="t-col t-col_8 "> 
+                <div> 
+                    <form id="form102445033" name='form102445033' role="form" {{!--action='' method='POST' data-success-callback="t678_onSuccess"--}} data-formactiontype="2" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_5 "  > 
+                        <input type="hidden" name="formservices[]" value="e75bdab2f7dfcdb7501e7ab931216acf" class="js-formaction-services"> 
+                         
+
+                        <div class="t-form__inputsbox"> 
+                            <div id="errorName" class="t-input-group t-input-group_nm" data-input-lid="1493283059688"> 
+                                <div class="t-input-block"> 
+                                    <input type="text" name="Name" class="t-input js-tilda-rule " value="" placeholder="Ваше имя (обязательно)" data-tilda-req="1" data-tilda-rule="name" style="color:#000000; border:0px solid #000; background-color:#ffffff; "> 
+                                    <div id="errorNameStr" class="t-input-error"></div> 
+                                </div> 
+                            </div> 
+                            <div id="errorEmail" class="t-input-group t-input-group_em" data-input-lid="1494858943227"> 
+                                <div class="t-input-block"> 
+                                    <input type="text" name="Email" class="t-input js-tilda-rule " value="" placeholder="Ваш E-mail (обязательно)" data-tilda-req="1" data-tilda-rule="email" style="color:#000000; border:0px solid #000; background-color:#ffffff; "> 
+                                    <div id="errorEmailStr" class="t-input-error"></div> 
+                                </div> 
+                            </div> 
+                            <div class="t-input-group t-input-group_ph" data-input-lid="1495040492013"> 
+                                <div class="t-input-block"> 
+                                    <input type="tel" name="Phone" class="t-input js-tilda-rule " value="" placeholder="Ваш телефон" data-tilda-rule="phone" pattern="[0-9]*" style="color:#000000; border:0px solid #000; background-color:#ffffff; "> 
+                                    <div class="t-input-error"></div> 
+                                </div> 
+                            </div> 
+                            <div class="t-input-group t-input-group_in" data-input-lid="1556728229978"> 
+                                <div class="t-input-block"> 
+                                    <input type="text" name="Input" class="t-input js-tilda-rule " value="" placeholder="Ваша организация" style="color:#000000; border:0px solid #000; background-color:#ffffff; "> 
+                                    <div class="t-input-error"></div> 
+                                </div> 
+                            </div> 
+                            <div class="t-input-group t-input-group_ta" data-input-lid="1556728391549"> 
+                                <div class="t-input-block"> 
+                                    <textarea name="Textarea" class="t-input js-tilda-rule " placeholder="Комментарий" style="color:#000000; border:0px solid #000; background-color:#ffffff; height:102px" rows="3"></textarea> 
+                                    <div class="t-input-error"></div> 
+                                </div> 
+                            </div> 
+                            {{#if home}}
+                                <input type="hidden" name="Service" tabindex="-1" value="Отправлено с формы по Клинингу">
+                            {{else}} 
+                                <input type="hidden" name="Service" tabindex="-1" value="Отправлено с формы по Аренде">
+                            {{/if}}
+                            <div class="t-form__errorbox-middle"> 
+                                <div id="divError" class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;"> 
+                                    <div id="fError" class="t-form__errorbox-text t-text t-text_md"> 
+                                        <p  class="t-form__errorbox-item js-rule-error js-rule-error-all"></p> 
+                                        <p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p> 
+                                        <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p> 
+                                        <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p> 
+                                        <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p> 
+                                        <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p> 
+                                    </div> 
+                                </div>
+                            </div> 
+                            <div id="divSuccess" class="js-successbox t-form__successbox t-text t-text_md" style="display:none;"></div>
+
+                            <div class="t-form__submit"> 
+                                <button type="submit" class="t-submit" id="fsubmit" style="color:#2e2e2e;background-color:#ffffff;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);" >
+                                    Сделать заказ
+                                </button> 
+                            </div> 
+                        </div> 
+                        <div class="t-form__errorbox-bottom"> 
+                            <div class="js-errorbox-all t-form__errorbox-wrapper" --style="display:none;"> 
+                                <div class="t-form__errorbox-text t-text t-text_md"> 
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p> 
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p> 
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p> 
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p> 
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p> 
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </form>
+
+                    <script>
+//js-error-control-box .removeClass("blue");
+                        $( document ).ready(function() {
+                            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+                            $("#form102445033").submit(function( event ) {
+                                
+                                $("#errorName").removeClass("js-error-control-box");
+                                $("#errorEmail").removeClass("js-error-control-box");
+                                $("#errorNameStr").empty();
+                                $("#fError").empty();
+                                $("#errorEmailStr").empty();
+                                $("#divError").css('display', 'none');
+                                $("#fError").empty();
+                                $("#divSuccess").css('display', 'none');
+                                $("#divSuccess").empty();
+
+                                var fName = $('[name="Name"]').val();
+                                var fEmail = $('[name="Email"]').val();
+
+                                if (fName.length == 0) {
+                                    $("#errorName").addClass("js-error-control-box");
+                                    $("#errorNameStr").text("Обязательное поле");
+                                    console.log( "name error!" );
+                                } else if (fEmail.length == 0) {
+                                    $("#errorEmail").addClass("js-error-control-box");
+                                    $("#errorEmailStr").text("Обязательное поле");
+                                    console.log( "email error!" );
+                                } else if (!fEmail.match(re)) {
+                                    $("#errorEmail").addClass("js-error-control-box");
+                                    $("#errorEmailStr").text("Неверный E-mail");
+                                    console.log( "email error!" );
+                                } else {
+                                    var formData = {
+                                            name: fName, 
+                                            email: fEmail, 
+                                            phone: $('[name="Phone"]').val(), 
+                                            org: $('[name="Input"]').val(), 
+                                            comment: $('[name="Textarea"]').val(), 
+                                            service: $('[name="Service"]').val()
+                                        }
+                                    console.log(formData);
+
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "/feedback",
+                                        contentType: 'application/json',
+                                        dataType: "json",
+                                        data: JSON.stringify(formData),
+                                        success:function(json){
+                                            console.log(json.success + " " + json.reason);
+
+                                            if (json.success) {
+                                                $("#divSuccess").css('display', 'block');
+                                                $("#divSuccess").text("Сообщение успешно отправлено!");
+                                                $("#fError").empty();
+                                                $("#divError").css('display', 'none');
+                                            } else {
+                                                $("#divError").css('display', 'block');
+                                                $("#fError").text("Ошибка на сервере. Попробуйте позже.");
+                                            }
+                                            $("#errorName").removeClass("js-error-control-box");
+                                            $("#errorEmail").removeClass("js-error-control-box");
+                                            $("#errorEmailStr").empty();
+                                            $("#errorNameStr").empty();
+                                        },
+                                        error:function(error){
+                                            console.log(error);
+                                            $("#divError").css('display', 'block');
+                                            $("#fError").text("Сервер не доступен. Попробуйте позже.");
+                                        },timeout:15000
+                                    });
+                                }
+                                return false;
+                            });
+                        });
+                        
+                        
+                        
+
+                        /*document.getElementById("Sfsubmit").addEventListener("click", function (e) {
+                            e.preventDefault();
+                            // получаем данные формы
+                            let registerForm = document.forms["form102445033"];
+                            let name = registerForm.elements["Name"].value;
+                            let email = registerForm.elements["Email"].value;
+                            let phone = registerForm.elements["Phone"].value;
+                            let org = registerForm.elements["Input"].value;
+                            let comment = registerForm.elements["Textarea"].value;
+                            let service = registerForm.elements["Service"].value;
+                            // сериализуем данные в json
+                            let feedback = JSON.stringify({name: name, email: email, phone: phone, org: org, comment: comment, service: service});
+                            let request = new XMLHttpRequest();
+                            // посылаем запрос на адрес "/user"
+                            request.open("POST", "/feedback", true);   
+                            request.setRequestHeader("Content-Type", "application/json");
+                            request.addEventListener("load", function () {
+                                // получаем и парсим ответ сервера
+                                let receivedUser = JSON.parse(request.response);
+                                console.log(receivedUser.name, "-", receivedUser.email);   // смотрим ответ сервера
+                            });
+                            request.send(feedback);
+                        });*/
+                    </script>
+
+                    <style>
+                        #rec102445033 input::-webkit-input-placeholder {color:#000000; opacity: 0.5;}	
+                        #rec102445033 input::-moz-placeholder {color:#000000; opacity: 0.5;}	
+                        #rec102445033 input:-moz-placeholder {color:#000000; opacity: 0.5;}	
+                        #rec102445033 input:-ms-input-placeholder {color:#000000; opacity: 0.5;}	
+                        #rec102445033 textarea::-webkit-input-placeholder {color:#000000; opacity: 0.5;}	
+                        #rec102445033 textarea::-moz-placeholder {color:#000000; opacity: 0.5;}	
+                        #rec102445033 textarea:-moz-placeholder {color:#000000; opacity: 0.5;}	
+                        #rec102445033 textarea:-ms-input-placeholder {color:#000000; opacity: 0.5;}
+                    </style> 
+                </div> 
+
+                <div class="t678__form-bottom-text t-text t-text_xs" field="text">
+                    Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности
+                </div> 
+            </div> 
+        </div> 
+    </div>
+
+    <style>
+        #rec102445033 .t-input__vis-ph { color:#000000;}
+    </style>
+        <!--[if IE 8 ]><style> .t-input-block .t-input:focus ~ .t-input__vis-ph, .t-input_has-content + .t-input__vis-ph { top: 10px; font-size: 12px; }</style><![endif]-->
+    <script>
+        function t_animateInputs(recid){ 
+            var el = $('#rec'+recid); 
+            var inputs = el.find('.t-input:not(.t-inputquantity)'); 
+            el.find('.t-input-group:not(.t-input-group_da):not(.t-input-group_uw):not(.t-input-group_ri):not(.t-input-group_rg) .t-input-block, .t-datepicker__wrapper').css({'position':'relative','overflow':'hidden'}); 
+            inputs.each(function(){ 
+                $(this).addClass('t-input_pvis'); 
+                if( typeof $(this).attr('placeholder')!='undefined' && $(this).attr('placeholder')!=''){ 
+                    $(this).after('<div class="t-input__vis-ph">'+$(this).attr('placeholder')+'</div>');	
+                } 
+                $(this).attr('placeholder',''); 
+            }); 
+            inputs.on("blur", function() { 
+                if($(this).val() != ''){ $(this).addClass('t-input_has-content'); 
+                } else { 
+                    $(this).removeClass('t-input_has-content'); } 
+            }); 
+            if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){ 
+                el.find('textarea:not(.t-input_bbonly)').css('padding-left', '17px'); 
+                el.find('textarea.t-input_bbonly').css('text-indent', '-3px'); 
+            }
+        }
+        $(document).ready(function(){ 
+            setTimeout(function(){ 
+                t_animateInputs('102445033'); }, 500);
+        })
+    </script> 
+
+    <style>
+        #rec102445033 .t-btn[data-btneffects-first],
+        #rec102445033 .t-btn[data-btneffects-second],
+        #rec102445033 .t-submit[data-btneffects-first],
+        #rec102445033 .t-submit[data-btneffects-second] {	position: relative; overflow: hidden; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
+    </style>
+
+    <script type="text/javascript">$(document).ready(function() {});</script>
+</div>
