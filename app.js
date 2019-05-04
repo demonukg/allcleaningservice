@@ -53,6 +53,6 @@ app.use(function (request, response) {
 
 
 // начинаем прослушивать подключения на 3000 порту
-app.listen(3000, "127.0.0.1", () => {
+app.listen(3000, "localhost", () => {
     console.log(`Server running at port 3000`);
 });
