@@ -16,9 +16,10 @@
 --}}
 
 <!DOCTYPE html>
-<html> 
+<html lang="ru"> 
 
     <head>
+        <meta name="language" content="ru">
         <meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
@@ -62,6 +63,25 @@
         {{!--<script src="/js/tilda-forms-1.0.min.js" charset="utf-8"></script>????????--}}
         <script src="/js/tilda-map-1.0.min.js" charset="utf-8"></script>
         <script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
+        <script type="application/ld+json">
+            { 
+                "@context" : "http://schema.org",
+                "@type" : "Organization",
+                "name": "All Cleaning Service",
+                "legalName" : "All Cleaning Service Llp",
+                "image": "https://allcleaningservice.org/images/logo.png",
+                "url" : "https://allcleaningservice.org",
+                "contactPoint" : [
+                    { 
+                        "@type" : "ContactPoint",
+                        "telephone" : "+7-747-936-02-46",
+                        "contactType" : "customer service",
+                        "areaServed" : "KZ"
+                    } 
+                ] 
+            }
+        </script>
+
         <script type="text/javascript">
             if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false && typeof(sessionStorage)!='undefined' && sessionStorage.getItem('visited')!=='y'){	
                     var style=document.createElement('style');	

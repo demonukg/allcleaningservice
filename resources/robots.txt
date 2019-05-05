@@ -1,0 +1,3 @@
+User-Agent: *
+Sitemap: https://allcleaningservice.org/sitemap.xml
+Host: https://allcleaningservice.org
