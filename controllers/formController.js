@@ -1,15 +1,13 @@
 exports.index = function (request, response) {
     const nodeMailer = require('nodemailer');
 
-    const name = request.body.name;
-    const email = request.body.email;
-    const phone = request.body.phone;
-    const org = request.body.org;
-    const comment = request.body.comment;
-    const service = request.body.service;
-
-    console.log(process.env.G_USER + " " + process.env.G_PASSWORD + " " + process.env.G_EMAIL);
-    console.log(name + " " + email);
+    if (!request.body.name || !request.body.email) {
+        response.json({
+            success: false,
+            reason: "No required fields"
+        });
+        return console.log("No required fields");
+    }
 
     let transporter = nodeMailer.createTransport({
         host: 'smtp.gmail.com',
@@ -43,16 +41,4 @@ exports.index = function (request, response) {
             reason: info.response
         });
     });
-
-
-
-
-
-    /*if(!request.body) return response.sendStatus(400);
-    //response.sendStatus(200);
-    response.json({
-        success: true,
-        reason: "test"
-    });*/
-
 };
