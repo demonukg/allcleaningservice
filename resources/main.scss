@@ -1,0 +1,1278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.page {
+    &__header {
+        background-color: #fff352;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    &__preview {
+        padding: 30px 0 0;
+        background-color: #fff352;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 9;
+    }
+    &__grid-box {
+        position: relative;
+        z-index: 10;
+        margin-bottom: 50px;
+    }
+    &__advantages {
+        background-color: #f7f7f7;
+        padding: 30px 0 100px;
+
+    }
+    &__form {
+        background-color: #fff352;
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    &__footer {
+        background-color: #fff352;
+        padding-bottom: 100px;
+    }
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.triangle-wrapp {
+    transform: scaleY(-1);
+}
+
+.triangle {
+    left: -50.9%;
+    bottom: 0;
+    position: absolute;
+    z-index: 9;
+    transform: translateX(-49.7%);
+}
+
+
+.home {
+    text-decoration: none;
+    display: block;
+    font-size: 28px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 600;   
+}
+
+.page-link {
+    display: flex;
+    &__item {
+        list-style: none;
+        margin-right: 35px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: block;
+        font-weight: 600;
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    &__contact {
+
+    }
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    min-width: 310px;
+}
+
+.header-container {
+   max-width: 1820px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    &__text-box {
+        margin-right: 35px;
+        text-align: right;
+        line-height: 1;
+    }
+}
+
+.call {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+}
+
+.text {
+    color: #000000;
+    font-weight: 300;
+    &_s13 {
+        font-size: 13px;
+    }
+    &_s40 {
+        font-size: 40px;
+        font-weight: 600;
+        hyphens: auto;
+    }
+    &_s28 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    &_s20 {
+        font-size: 20px;
+    }
+    &_s18 {
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: 600;
+    }
+    &_s18a {
+        font-size: 18px;
+        line-height: 1.55;
+    }
+    &_bold {
+        font-weight: 600;
+    }
+}
+
+.btn {
+    display: block;
+    padding: 11.5px 32.5px;
+    background-color: #ffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.page-preview {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__info {
+        text-align: justify;
+        line-height: 1.55;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+}
+
+.grid-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &__item {
+        width: 25%;
+        margin-bottom: 100px;
+    }
+}
+
+.grid-item {
+    text-align: center;
+    &__img-box {
+        
+        img {
+            width: 150px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.grid-vehicle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__item {
+        width: 28%;
+        margin-bottom: 90px;
+    }
+}
+
+.vehicle-item {
+    text-align: center;
+    &__img-box {
+        margin-bottom: 15px;
+    }
+    &__img {
+        width: 230px;
+        height: auto;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 1.55;
+        font-weight: 300;
+        text-align: left;
+    }
+}
+
+
+.title {
+    margin-bottom: 30px;
+    &_mb_100 {
+        margin-bottom: 100px;
+    }
+    &_mb50 {
+        margin-bottom: 50px;
+    }
+} 
+
+.page-advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &__item {
+        margin: 0 20px 0 20px;
+        width: 50%;
+    }
+}
+
+.advantages-item {
+    display: flex;
+    &__img-box {
+        margin-right: 20px;
+    }
+    &__text-box {
+        line-height: 1.55;
+    }
+    &__img-wrapper {
+        width: 75px;
+    }
+    &__img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.text-block {
+    text-align: center;
+    padding: 0 200px;
+    line-height: 1.55;
+
+}
+.text-warning {
+    text-align: center;
+}
+
+.page-form {
+    max-width: 80%;
+    line-height: 1.55;
+    &__form {
+        padding: 30px 0 20px;
+    }
+}
+
+.form-order {
+    display: flex;
+    flex-direction: column;
+    &__input-wrapper {
+        position: relative;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    /*&__text {
+        font-size: 16px;
+        line-height: 1;
+        opacity: .5;
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        height: 16px;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition: transform 0.2s linear;
+        transition: transform 0.2s linear;
+        -webkit-transform-origin: left;
+        transform-origin: left;
+        pointer-events: none;
+        white-space: nowrap;
+    }*/
+    &__input {
+        border: none;
+        width: 100%;
+        padding: 26px 20px 26px 20px;
+        font-size: 16px;
+    }
+    &__textarea {
+        border: none;
+        resize: vertical;
+        width: 100%;
+        padding: 26px 20px 26px 20px;
+        font-size: 16px;
+    }
+    &__success {
+        height: 50px;
+        width: 100%;
+        background-color: #62C584;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 14px 0px;
+    }
+    &__error {
+        height: 50px;
+        width: 100%;
+        background-color: #f95d51;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 14px 0px;
+    }
+    &__loader {
+        align-self: center;
+        margin-bottom: 20px;
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+    }
+    &__submit {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 60px;
+        border: none;
+        background-color: #ffffff;
+    }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.t-sociallinks {
+    
+    text-align: center;
+}
+// {ДАЛЬШЕ ИДУТ МЕДИА ЗАПРОСЫ}
+
+// {ДЛЯ АЙФОНА Х}
+@media (min-width: 320px) and (max-width: 375px) {
+
+    .container {
+        padding: 0 10px;
+    }
+    // {HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page-header {
+        flex-direction: column;
+        &__page-link {
+            margin-bottom: 20px;
+            order: 2;
+        }
+        &__title {
+            margin-bottom: 20px;
+            text-align: center;
+            order: 1;
+            margin-bottom: 40px;
+        }
+        &__contact {
+            order: 3;
+        }
+    }
+
+    .home {
+        font-size: 26px;
+    }
+
+    .page-link {
+        flex-direction: column;
+        text-align: center;
+        &__item {
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+    }
+    .contact {
+        flex-direction: column;
+        &__text-box {
+            margin-right: 0;
+            text-align: center;
+            margin-bottom: 40px;
+
+        }
+        .call {
+            display: block;
+            padding: 5px;
+        }
+    }
+    // {КОНЕЦ HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+
+    // {PAGE-PREVIEW//////////////////////////////////////////////////////////////////////////}
+    .page__preview {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .page-preview {
+        &__title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        &__info {
+            font-size: 14px;
+        }
+    }
+    // {КОНЕЦ PAGE-PREVIEW}
+
+    // {PAGE__GRID-BOX////////////////////////////////////////////////////////////////////////}
+    .page__grid-box {
+        margin-bottom: 20px;
+    }
+    .grid-box {
+        flex-direction: column;
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+
+    .grid-vehicle {
+        justify-content: center;
+        &__item {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    .vehicle-item {
+        &__title {
+            font-size: 14px;
+            line-height: 1.35;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 1.55;
+        }
+    }
+
+    // {END OF THE PAGE__GRID-BOX \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    // {PAGE__ADVANTAGES///////////////////////////////////////////////////////////////////////}
+
+    .page__advantages {
+        padding-bottom: 20px;
+    }
+    .page-advantages {
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        &__item {
+            margin: 0 0 40px 0;
+            width: 100%;
+        }
+        
+    }
+    .text-block {
+        padding: 0 10px;
+    }
+
+    .advantages-item {
+        &__img-box {
+        }
+        &__text-box {
+
+        }
+        &__img-wrapper {
+            width: 40px;
+        }
+    }
+
+    // {END OF PAGE__ADVANTAGES/////////////////////////////////////////////////////////////////}
+    // {PAGE__FORM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page__form {
+        padding-bottom: 20px;
+    }
+    .page-form {
+        max-width: 100%;
+    }
+
+    .form-order {
+        /*&__text {
+            font-size: 12px;
+        }*/
+        &__input {
+            padding: 16px 10px 16px 10px;
+        }
+        &__textarea {
+            padding: 16px 10px 16px 10px;
+            height: 50px;
+        }
+        &__submit {
+            padding: 15px 45px;
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+    // {ТЕКСТ СТРАНИЦЫ}
+
+    .text {
+        
+        &_s40 {
+            font-size: 20px;
+        }
+        &_s28 {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+        &_s18 {
+            font-size: 14px;
+            line-height: 1.35;
+        }
+        &_s28 {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+        &_s18a {
+            font-size: 14px;
+            line-height: 1.17;
+        }
+        &_s20 {
+            font-size: 16px;
+            line-height: 1.45;
+        }
+
+    }
+
+
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+        &_mb_100 {
+            margin-bottom: 50px;
+        }
+        &_mb50 {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width: 376px) and (max-width: 499px) {
+    .header-container {
+        padding: 20px 40px;
+    }
+    .container {
+        padding: 0 30px;
+    }
+    .text {
+        &_s40 {
+            font-size: 28px;
+        }
+        &_s20 {
+            font-size: 16px;
+            line-height: 1.45;
+        }
+        &_s28 {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+        &_s18 {
+            font-size: 14px;
+            line-height: 1.35;
+        }
+        &_s18a {
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+    }
+
+    // {HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page-header {
+        display: flex;
+        flex-direction: column;
+        &__page-link {
+            order: 2;
+            margin-bottom: 30px;
+        }
+        &__title {
+            order: 1;
+            margin-bottom: 50px;
+        }
+        &__contact {
+            order: 3;
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+        &__text-box {
+            margin-bottom: 30px;
+            margin-right: 0px;
+            text-align: center;
+        }
+
+    }
+
+    .btn {
+        padding: 8px 26px;
+    }
+    // {КОНЕЦ HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+
+    // {PAGE-PREVIEW//////////////////////////////////////////////////////////////////////////}
+    .page__preview {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .page-preview {
+        &__title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        &__info {
+            font-size: 14px;
+        }
+    }
+    // {КОНЕЦ PAGE-PREVIEW}
+
+    // {PAGE__GRID-BOX////////////////////////////////////////////////////////////////////////}
+    .page__grid-box {
+        margin-bottom: 20px;
+    }
+    .grid-box {
+        display: flex;
+        
+        &__item {
+            margin-bottom: 20px;
+            width: 50%;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .grid-vehicle {
+        justify-content: center;
+        &__item {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    .vehicle-item {
+        &__title {
+            font-size: 14px;
+            line-height: 1.35;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 1.55;
+        }
+    }
+
+    // {END OF THE PAGE__GRID-BOX \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    // {PAGE__ADVANTAGES///////////////////////////////////////////////////////////////////////}
+    
+    .page__advantages {
+        padding-bottom: 60px;
+    }
+    .page-advantages {
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        &__item {
+            margin: 0 0 40px 0;
+            width: 100%;
+        }
+        
+    }
+    .text-block {
+        padding: 0 10px;
+    }
+
+    .advantages-item {
+        &__img-box {
+        }
+        &__text-box {
+
+        }
+        &__img-wrapper {
+            width: 40px;
+        }
+    }
+
+    // {END OF PAGE__ADVANTAGES/////////////////////////////////////////////////////////////////}
+    // {PAGE__FORM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page__form {
+        padding-bottom: 20px;
+    }
+    .page-form {
+        max-width: 100%;
+    }
+
+    .form-order {
+        /*&__text {
+            font-size: 12px;
+        }*/
+        &__input {
+            padding: 16px 10px 16px 10px;
+        }
+        &__textarea {
+            padding: 16px 10px 16px 10px;
+            height: 50px;
+        }
+        &__submit {
+            padding: 15px 45px;
+            border-radius: 10px;
+        }
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+        &_mb_100 {
+            margin-bottom: 50px;
+        }
+        &_mb50 {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .header-container {
+        padding: 20px 40px;
+    }
+    .container {
+        padding: 0 30px;
+    }
+    .text {
+        &_s20 {
+            font-size: 16px;
+            line-height: 1.45;
+        }
+        &_s28 {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+        &_s18 {
+            font-size: 14px;
+            line-height: 1.35;
+        }
+        &_s18a {
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+    }
+
+    // {HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page-header {
+        display: flex;
+        flex-direction: column;
+        &__page-link {
+            order: 2;
+            margin-bottom: 30px;
+        }
+        &__title {
+            order: 1;
+            margin-bottom: 50px;
+        }
+        &__contact {
+            order: 3;
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+        &__text-box {
+            margin-bottom: 30px;
+            margin-right: 0px;
+            text-align: center;
+        }
+
+    }
+
+    .btn {
+        padding: 8px 26px;
+    }
+    // {КОНЕЦ HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+
+    // {PAGE-PREVIEW//////////////////////////////////////////////////////////////////////////}
+    .page__preview {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .page-preview {
+        &__title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        &__info {
+            font-size: 14px;
+        }
+    }
+    // {КОНЕЦ PAGE-PREVIEW}
+
+    // {PAGE__GRID-BOX////////////////////////////////////////////////////////////////////////}
+    .page__grid-box {
+        margin-bottom: 20px;
+    }
+    .grid-box {
+        display: flex;
+        justify-content: flex-start;
+        &__item {
+            margin-bottom: 20px;
+            width: 50%;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .grid-vehicle {
+        justify-content: center;
+        &__item {
+            width: 100%;
+            //margin-bottom: 90px;
+        }
+    }
+    .vehicle-item {
+        &__title {
+            font-size: 16px;
+            line-height: 1.35;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 1.55;
+        }
+    }
+
+    // {END OF THE PAGE__GRID-BOX \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    // {PAGE__ADVANTAGES///////////////////////////////////////////////////////////////////////}
+    
+    .page__advantages {
+        padding-bottom: 60px;
+    }
+    .page-advantages {
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        &__item {
+            margin: 0 0 40px 0;
+            width: 100%;
+        }
+        
+    }
+    .text-block {
+        padding: 0 20px;
+    }
+    .advantages-item {
+        &__img-wrapper {
+            width: 50px;
+        }
+    }
+
+
+    // {END OF PAGE__ADVANTAGES/////////////////////////////////////////////////////////////////}
+    // {PAGE__FORM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page__form {
+        padding-bottom: 50px;
+    }
+    .page-form {
+        max-width: 100%;
+    }
+
+    .form-order {
+        /*&__text {
+            font-size: 12px;
+        }*/
+        &__input {
+            padding: 16px 10px 16px 10px;
+        }
+        &__textarea {
+            padding: 16px 10px 16px 10px;
+            height: 50px;
+        }
+        &__submit {
+            padding: 15px 45px;
+            border-radius: 10px;
+        }
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+        &_mb_100 {
+            margin-bottom: 50px;
+        }
+        &_mb50 {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .header-container {
+        padding: 10px 30px;
+    }
+
+    .home {
+        //font-size: 22px;
+    }
+
+    .text {
+        &_s20 {
+            font-size: 18px;
+        }
+
+    }
+
+    // {HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page-header {
+        display: flex;
+        flex-direction: column;
+        &__page-link {
+            order: 2;
+            margin-bottom: 30px;
+        }
+        &__title {
+            order: 1;
+            margin-bottom: 50px;
+        }
+        &__contact {
+            order: 3;
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+        &__text-box {
+            margin-bottom: 30px;
+            margin-right: 0px;
+            text-align: center;
+        }
+
+    }
+
+    .btn {
+        padding: 8px 26px;
+    }
+    
+
+    // {КОНЕЦ HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+
+    // {PAGE-PREVIEW//////////////////////////////////////////////////////////////////////////}
+    .page__preview {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .page-preview {
+        &__title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        &__info {
+            font-size: 18px;
+        }
+    }
+    // {КОНЕЦ PAGE-PREVIEW}
+
+    // {PAGE__GRID-BOX////////////////////////////////////////////////////////////////////////}
+    .page__grid-box {
+        margin-bottom: 20px;
+        .title {
+            text-align: left;
+        }
+    }
+    .grid-box {
+        
+        &__item {
+            width: 50%;
+            //margin-bottom: 20px;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+
+    .grid-vehicle {
+        &__item {
+            width: 48%;
+        }
+    }
+    .vehicle-item {
+        &__title {
+            font-size: 16px;
+            line-height: 1.35;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 1.55;
+        }
+    }
+
+    // {END OF THE PAGE__GRID-BOX \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    // {PAGE__ADVANTAGES///////////////////////////////////////////////////////////////////////}
+    
+    .page__advantages {
+        padding-bottom: 60px;
+    }
+    .page-advantages {
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        &__item {
+            margin: 0 0 40px 0;
+            width: 100%;
+        }
+        
+    }
+    .text-block {
+        padding: 0 100px;
+    }
+
+    // {END OF PAGE__ADVANTAGES/////////////////////////////////////////////////////////////////}
+    // {PAGE__FORM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page__form {
+        //padding-bottom: 20px;
+    }
+    .title {
+        text-align: left;
+        margin-bottom: 20px;
+        &_mb_100 {
+            margin-bottom: 50px;
+        }
+        &_mb50 {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width: 981px) and (max-width: 1199px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .header-container {
+        padding: 10px 30px;
+    }
+
+    .home {
+        //font-size: 22px;
+    }
+
+    // {HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page-header {
+
+    }
+    .contact {
+        
+        &__text-box {
+            margin-right: 10px;
+            text-align: center;
+        }
+
+    }
+
+    .btn {
+        padding: 8px 26px;
+    }
+    
+
+    // {КОНЕЦ HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+
+    // {PAGE-PREVIEW//////////////////////////////////////////////////////////////////////////}
+    .page__preview {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .page-preview {
+        &__title {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        &__info {
+            font-size: 18px;
+        }
+    }
+    // {КОНЕЦ PAGE-PREVIEW}
+
+    // {PAGE__GRID-BOX////////////////////////////////////////////////////////////////////////}
+    .page__grid-box {
+        margin-bottom: 20px;
+        .title {
+            text-align: left;
+        }
+    }
+    .grid-box {
+        
+        &__item {
+            //margin-bottom: 20px;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    // {END OF THE PAGE__GRID-BOX \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    // {PAGE__ADVANTAGES///////////////////////////////////////////////////////////////////////}
+    
+    .page__advantages {
+        padding-bottom: 60px;
+    }
+    .page-advantages {
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        &__item {
+            margin: 0 0 40px 0;
+            width: 100%;
+        }
+        
+    }
+    .text-block {
+        
+    }
+
+    // {END OF PAGE__ADVANTAGES/////////////////////////////////////////////////////////////////}
+    // {PAGE__FORM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page__form {
+        //padding-bottom: 20px;
+    }
+    .title {
+        text-align: left;
+        margin-bottom: 20px;
+        &_mb_100 {
+            margin-bottom: 50px;
+        }
+        &_mb50 {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .header-container {
+        padding: 10px 40px;
+    }
+
+    
+   
+    // {HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page-header {
+        
+        &__page-link {
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+    // {КОНЕЦ HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+
+    // {PAGE-PREVIEW//////////////////////////////////////////////////////////////////////////}
+    .page__preview {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .page-preview {
+        &__title {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        &__info {
+            font-size: 18px;
+        }
+    }
+    // {КОНЕЦ PAGE-PREVIEW}
+
+    // {PAGE__GRID-BOX////////////////////////////////////////////////////////////////////////}
+    .page__grid-box {
+        margin-bottom: 20px;
+        .title {
+            text-align: left;
+        }
+    }
+    .grid-box {
+        
+        &__item {
+            //margin-bottom: 20px;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    // {END OF THE PAGE__GRID-BOX \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    // {PAGE__ADVANTAGES///////////////////////////////////////////////////////////////////////}
+    
+    .page__advantages {
+        //padding-bottom: 60px;
+    }
+    .page-advantages {
+        
+        margin-bottom: 40px;
+        
+        &__item {
+            margin: 0 0 40px 0;
+        }
+        
+    }
+    .text-block {
+        
+    }
+
+    // {END OF PAGE__ADVANTAGES/////////////////////////////////////////////////////////////////}
+    // {PAGE__FORM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\}
+    .page__form {
+        //padding-bottom: 100px;
+    }
+    .title {
+        text-align: left;
+        margin-bottom: 20px;
+        &_mb_100 {
+            margin-bottom: 100px;
+        }
+        &_mb50 {
+            margin-bottom: 25px;
+        }
+    }
+}
