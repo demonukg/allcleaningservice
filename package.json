@@ -6,7 +6,7 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "hbs": "^4.0.4",
-    "jquery-validation": "^1.19.0",
+    "jquery-validation": "^1.19.5",
     "nodemailer": "^6.1.1",
     "path": "^0.12.7"
   },
